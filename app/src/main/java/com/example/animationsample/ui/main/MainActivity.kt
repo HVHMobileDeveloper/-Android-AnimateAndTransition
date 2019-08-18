@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             with(window) {
                 requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
                 sharedElementEnterTransition = Explode()
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onEmailClicked(mail: Mail, root: View, imageView: View) {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                 this,
                 Pair(root, getString(R.string.transition_root)),

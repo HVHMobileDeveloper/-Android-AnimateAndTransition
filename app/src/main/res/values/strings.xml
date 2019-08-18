@@ -3,4 +3,5 @@
 
     <string name="transition_root" translatable="false">transition_root</string>
     <string name="transition_image" translatable="false">transition_image</string>
+    <string name="transition_profile" translatable="false">transition_profile</string>
 </resources>
